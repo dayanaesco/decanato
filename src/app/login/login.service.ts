@@ -33,14 +33,11 @@ export class LoginService {
     }
 
     getIdToken() {
-        //return this.token;
         return this.cookies.get('token');
     }
 
-        estaLogueado(): boolean {
-            const token = this.cookies.get('token');
-            // Devuelve true si el token existe (no es cadena vacía)
-            return !!token; // Esto convierte el valor a booleano: 'token' -> true, '' -> false
+    estaLogueado(){
+        return this.cookies.get('token');
     }
 
     logout() {

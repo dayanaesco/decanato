@@ -1,10 +1,12 @@
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">
-            <div class="card shadow border-warning border-top-0 border-right-0 border-bottom-0" style="border-left-width: 5px !important;">
-                <div class="card-header bg-primary text-white text-center">
+            <div class="card shadow border-warning">
+                <div class="card-header text-warning text-center" style="background-color: #1F5792;">
+                    <img src="https://scontent.fsal2-1.fna.fbcdn.net/v/t39.30808-6/461680486_963489615818084_6876380124500695705_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEllghwm-3lJC8tA1E1N0oyQavxiUB6tvBBq_GJQHq28KgxIaMjFV7sd_kt2d4V7YYgU8A2mjOevpMLIQNy4S6-&_nc_ohc=O5jD9GvmkY0Q7kNvwFff2LK&_nc_oc=Adl1_W5Zcvxj_EBrrd71hr-kSdPGFUVCKEq0TNRGzFdvKpPRKWGYaXSFtEPQ6zRGfbs6YkCeZsQ-dFDjdjEd_Dgr&_nc_zt=23&_nc_ht=scontent.fsal2-1.fna&_nc_gid=qY0y6gMydIrka_xTuXHv8w&oh=00_AfiXx1yxHVzWuKEmO-r9tg-KP7OlDKTWGmnDY2xKDUxUvQ&oe=692D0FF4" 
+                    alt="Logo UCAD" class="img-fluid mb-2" style="max-height: 150px;">
                     <h4 class="mb-0">Acceso a Decanatos UCAD</h4>
-                </div>
+                    </div>
                 <div class="card-body">
                     <p class="text-danger text-center small font-weight-bold">
                         Ingrese sus credenciales.
@@ -18,8 +20,7 @@
                             <label for="password" class="form-control-label">Contraseña</label>
                             <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" class="form-control" ngModel required>
                         </div>
-        
-                        
+                
                         <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="miFormulario.invalid">
                             Iniciar Sesión
                         </button>

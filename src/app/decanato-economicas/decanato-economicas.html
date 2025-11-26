@@ -1,24 +1,24 @@
 <div class="container py-4">
   <div class="text-center mb-5">
     <h1 class="display-4 text-success font-weight-bold">Decanato de Ciencias Económicas</h1>
-    <h1 class="display-4 text-info font-weight-bold">Ing. Marvin Walberto Molina</h1>
+    <h1 class="display-4 text-dark font-weight-bold">Ing. Marvin Walberto Molina</h1>
     <div class="card mb-5 shadow-lg">
-      <img src="https://scontent.fsal4-1.fna.fbcdn.net/v/t39.30808-6/571165654_1276174131216296_7085079811733977635_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHHIII5vpq6cGSK1WgDCbCSGrnBENv9OTkaucEQ2_05OfgVSwkxGn1FCoDOpYRhX01m15eupUAUFUu979d3UGr2&_nc_ohc=7Tgjr4JPHBMQ7kNvwEz0FzO&_nc_oc=AdlIfm-EjtPc1NzRrv_3kkymkDJv5rhALbY8JF8TF_gI8g16_T0pUoGxxxYJP7f7b54&_nc_zt=23&_nc_ht=scontent.fsal4-1.fna&_nc_gid=i3fa72MTGsqZ92n5uV70Og&oh=00_AfhjXhapCHbEMMua0jW15E8TAZ0_iRj4_iaf9zQdMjBdlg&oe=692C071B" class="card-img-top"
-        alt="Fachada de la Facultad de Ciencias Económicas"
+      <img
+        src="https://scontent.fsal4-1.fna.fbcdn.net/v/t39.30808-6/571165654_1276174131216296_7085079811733977635_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHHIII5vpq6cGSK1WgDCbCSGrnBENv9OTkaucEQ2_05OfgVSwkxGn1FCoDOpYRhX01m15eupUAUFUu979d3UGr2&_nc_ohc=7Tgjr4JPHBMQ7kNvwEz0FzO&_nc_oc=AdlIfm-EjtPc1NzRrv_3kkymkDJv5rhALbY8JF8TF_gI8g16_T0pUoGxxxYJP7f7b54&_nc_zt=23&_nc_ht=scontent.fsal4-1.fna&_nc_gid=i3fa72MTGsqZ92n5uV70Og&oh=00_AfhjXhapCHbEMMua0jW15E8TAZ0_iRj4_iaf9zQdMjBdlg&oe=692C071B"
+        class="card-img-top" alt="Fachada de la Facultad de Ciencias Económicas"
         style="object-fit: cover; border-radius: 0.5rem 0.5rem 0 0;">
       <div class="card-body">
-        <h3 class="card-title text-danger">Nuestro Compromiso</h3>
-        <p class="card-text">Nuestra facultad prepara a los futuros líderes financieros con una visión global, enfocados
-          en la innovación y la toma de decisiones basada en datos.</p>
+        <h3 class="card-title text-success">Nuestro Compromiso</h3>
+        <p class="card-text">Nuestra facultad prepara a los futuros líderes financieros y tecnológicos con una
+          visión global,enfocados en la innovación, la toma de decisiones basada en datos y las herramientas de la era digital.</p>
       </div>
     </div>
 
-    <h2 class="text-center mb-4 text-primary">Servicios Clave del Decanato</h2>
+    <h2 class="text-center mb-4 text-success">Servicios Clave del Decanato</h2>
     <div class="row">
       <div *ngFor="let servicio of servicios" class="col-md-4 mb-4">
-        <div class="card h-100 border-primary shadow-sm text-center">
+        <div class="card h-100 border-success shadow-sm text-center">
           <div class="card-body">
-            <i [class]="servicio.icon" class="fa-3x text-primary mb-3"></i>
             <h5 class="card-title">{{ servicio.nombre }}</h5>
             <p class="card-text text-muted">{{ servicio.descripcion }}</p>
           </div>
@@ -26,8 +26,8 @@
       </div>
     </div>
 
-    <div class="alert alert-danger mt-5 text-center">
-      <i class="fas fa-lock me-2"></i> Esta es una vista protegida. Su contenido es exclusivo para usuarios
+    <div class="alert alert-success mt-5 text-center">
+      <i class="fas fa-lock me-2"></i> Esta es una vista protegida. <br> Su contenido es exclusivo para usuarios
       autenticados.
     </div>
   </div>
