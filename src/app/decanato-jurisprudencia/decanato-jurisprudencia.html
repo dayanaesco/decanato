@@ -1,0 +1,41 @@
+<div class="container py-4">
+  <!-- Encabezado y Misión/Visión obtenidos del .ts -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 text-warning font-weight-bold">Decanato de Jurisprudencia</h1>
+    <h1 class="display-4 text-info font-weight-bold">Licda. Lizbeth Caceres</h1>
+    <div class="card mb-5 shadow-lg">
+      <!-- Uso de imagen placeholder (con colores temáticos) -->
+      <img
+        src="https://scontent.fsal4-1.fna.fbcdn.net/v/t39.30808-6/572110598_1276174164549626_1183327318989728964_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHjHBAWRQV6GsBstcdU7vGYHnWs-CvX6q4edaz4K9fqriyMuStT431EC71KUkDtkMrihJOMjgGO9uazCnP7qTr6&_nc_ohc=pXO_pIG2ihsQ7kNvwEnIfll&_nc_oc=Adk01OYn9widkDE7wgOJXfRxuVLmfQF5iQoRbaGWa4g66fknBSmRCx-J--hXNUh9j2o&_nc_zt=23&_nc_ht=scontent.fsal4-1.fna&_nc_gid=agREkXQT4Z1liuAC_8wEyA&oh=00_AfhGEBYuQD0iteio3BxFStSC56foDcbiYGC8dNWHRmuU4A&oe=692BFCD8"
+        class="card-img-top" alt="Fachada de la Facultad de Jurisprudencia"
+        style="object-fit: cover; border-radius: 0.5rem 0.5rem 0 0;">
+      <div class="card-body">
+        <h3 class="card-title text-warning">Justicia y Liderazgo Legal</h3>
+        <p class="card-text">Formamos abogados con una sólida base en ética y derecho, preparados para defender la
+          justicia y enfrentar los desafíos del sistema legal moderno.</p>
+      </div>
+    </div>
+
+    <!-- Sección de Servicios (Uso de ngFor para iterar la lista 'servicios' del TS) -->
+    <h2 class="text-center mb-4 text-primary">Servicios Clave del Decanato</h2>
+    <div class="row">
+      <!-- Tarjetas de Servicios -->
+      <div *ngFor="let servicio of servicios" class="col-md-4 mb-4">
+        <div class="card h-100 border-primary shadow-sm text-center">
+          <div class="card-body">
+            <!-- Uso de la propiedad 'icon' del objeto servicio -->
+            <i [class]="servicio.icon" class="fa-3x text-primary mb-3"></i>
+            <!-- Uso de la propiedad 'nombre' del objeto servicio -->
+            <h5 class="card-title">{{ servicio.nombre }}</h5>
+            <!-- Uso de la propiedad 'descripcion' del objeto servicio -->
+            <p class="card-text text-muted">{{ servicio.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-danger mt-5 text-center">
+      <i class="fas fa-lock me-2"></i> Esta es una vista protegida. Su contenido es exclusivo para usuarios
+      autenticados.
+    </div>
+  </div>

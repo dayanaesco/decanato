@@ -1,0 +1,40 @@
+<div class="container py-4">
+  <!-- Encabezado y Misión/Visión obtenidos del .ts -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 text-success font-weight-bold">Decanato de Teología</h1>
+    <h1 class="display-4 text-danger font-weight-bold"> Lic. Gustavo Antonio Ávalos</h1>
+    <div class="card mb-5 shadow-lg">
+      <img
+        src="https://scontent.fsal4-1.fna.fbcdn.net/v/t39.30808-6/573282044_1276174034549639_4060331870566071964_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHDnYvIxiI_oaIrelhWo_vT1bdxA_BST63Vt3ED8FJPrQLgIYE5qInXHPO6GO9hgbEt55GJMzzA-6b0ySdZKUTd&_nc_ohc=H-S9BmGwX2UQ7kNvwGC_fJF&_nc_oc=Adn2Ny_CvD3Os0EaeMaOGReWNu0PEZVSguFVd4C3WYXUdoOflX-Tim_fMz4yYOaNu0g&_nc_zt=23&_nc_ht=scontent.fsal4-1.fna&_nc_gid=MiBDldhp2VLUue6w3PEu_A&oh=00_AfjtkOjckrBJtPZW_2Fm5DV4aVHk6HvutabZ1-2be_sKng&oe=692C332A"
+        class="card-img-top" alt="Fachada de la Facultad de Teología"
+        style="object-fit: cover; border-radius: 0.5rem 0.5rem 0 0;">
+      <div class="card-body">
+        <h3 class="card-title text-success">Nuestro Compromiso</h3>
+        <p class="card-text">Ofrecer un ambiente de estudio y reflexión que combine la rigurosidad académica con la vida
+          espiritual, preparando a los estudiantes para los desafíos del mundo moderno.</p>
+      </div>
+    </div>
+
+    <h2 class="text-center mb-4 text-primary">Servicios Clave del Decanato</h2>
+    <div class="row">
+      <!-- Tarjetas de Servicios -->
+      <div *ngFor="let servicio of servicios" class="col-md-4 mb-4">
+        <div class="card h-100 border-primary shadow-sm text-center">
+          <div class="card-body">
+            <!-- Uso de la propiedad 'icon' del objeto servicio -->
+            <i [class]="servicio.icon" class="fa-3x text-primary mb-3"></i>
+            <!-- Uso de la propiedad 'nombre' del objeto servicio -->
+            <h5 class="card-title">{{ servicio.nombre }}</h5>
+            <!-- Uso de la propiedad 'descripcion' del objeto servicio -->
+            <p class="card-text text-muted">{{ servicio.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aviso de Componente Protegido -->
+    <div class="alert alert-danger mt-5 text-center">
+      <i class="fas fa-lock me-2"></i> Esta es una vista protegida. Su contenido es exclusivo para usuarios
+      autenticados.
+    </div>
+  </div>

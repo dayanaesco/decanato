@@ -1,0 +1,34 @@
+<div class="container py-4">
+  <!-- Encabezado y Misión/Visión obtenidos del .ts -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 text-info font-weight-bold">Decanato de Humanidades</h1>
+    <h1 class="display-4 text-info font-weight-bold">Mtro. Ricardo Cardoza</h1>
+    <div class="card mb-5 shadow-lg">
+      <!-- Uso de imagen placeholder (con colores temáticos) -->
+      <img src="https://scontent.fsal4-1.fna.fbcdn.net/v/t39.30808-6/571334240_1276174114549631_2224678848546153158_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHc_NXi7_s-7ZXjD1_ocvpVmA8XHEke1W-YDxccSR7Vb73ok2JkoHbzOn3Mr5mR2kr7dfG4XE3KOtER-t3DOnEA&_nc_ohc=kLx9By3I9ZEQ7kNvwHzkFAx&_nc_oc=Adn-_CHu1HsoUd6ypTo4dFkRxyXSgslmvnUdf8Ik50QX-YNc3DIkxqoSom-1zHN-LfI&_nc_zt=23&_nc_ht=scontent.fsal4-1.fna&_nc_gid=WKSBtv2AwVhNq87GGROT5w&oh=00_AfiS3doIO3TAiDCi-7pk9MAlUeVQC9RDVuynfH_HHeUAMQ&oe=692C2BA3"
+        alt="Fachada de la Facultad de Humanidades" style="object-fit: cover; border-radius: 0.5rem 0.5rem 0 0;">
+      <div class="card-body">
+        <h3 class="card-title text-info">Cultivando el Pensamiento Crítico</h3>
+        <p class="card-text">Nuestra facultad se dedica a la reflexión profunda sobre la condición humana, preparando a
+          líderes éticos con una sólida base cultural e histórica.</p>
+      </div>
+    </div>
+
+    <h2 class="text-center mb-4 text-primary">Servicios Clave del Decanato</h2>
+    <div class="row">
+      <div *ngFor="let servicio of servicios" class="col-md-4 mb-4">
+        <div class="card h-100 border-primary shadow-sm text-center">
+          <div class="card-body">
+            <i [class]="servicio.icon" class="fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">{{ servicio.nombre }}</h5>
+            <p class="card-text text-muted">{{ servicio.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-danger mt-5 text-center">
+      <i class="fas fa-lock me-2"></i> Esta es una vista protegida. Su contenido es exclusivo para usuarios
+      autenticados.
+    </div>
+  </div>

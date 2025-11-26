@@ -1,0 +1,31 @@
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow border-warning border-top-0 border-right-0 border-bottom-0" style="border-left-width: 5px !important;">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4 class="mb-0">Acceso a Decanatos UCAD</h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-danger text-center small font-weight-bold">
+                        Ingrese sus credenciales.
+                    </p>
+                    <form #miFormulario="ngForm" (ngSubmit)="login(miFormulario)">
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-control-label">Correo Electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="Ingrese su email" class="form-control" ngModel required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="password" class="form-control-label">Contraseña</label>
+                            <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" class="form-control" ngModel required>
+                        </div>
+        
+                        
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="miFormulario.invalid">
+                            Iniciar Sesión
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
